@@ -11,13 +11,14 @@ body{
 
 .metacontainer{
     display: flex;
-    gap:40px;
+    justify-content: center;
+    gap:20px;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 2px 4px 16px rgba(0,0,0,.2);
 }
 
-.container{
+.container, #color{
     display: flex;
     padding: 10px;
     border-radius: 10px;
@@ -29,10 +30,6 @@ body{
 
 div .line{
     display: flex;
-}
-
-#info{
-
 }
 
 div .rect{
@@ -50,4 +47,50 @@ p{
 #title{
     font-size: 180%;
     font-weight: bolder;
+}
+
+#info{
+    margin-bottom: 30px;
+}
+
+input{
+    height: 30px;
+    border-radius: 10px;
+}
+
+[data-coloris] {
+    height: 36px;
+    border: none;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    font-size: 14px;
+  }
+
+.specific{
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.specific:hover{
+    border: solid black 1.5px;
+}
+.colorset{
+    display: flex;
+    justify-content:space-around;
+}
+
+#color{
+    gap: 20px;
+}
+
+#red{
+    background-color: red;
+}
+#green{
+    background-color: green;
+}
+#blue{
+    background-color: blue;
 }
