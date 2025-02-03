@@ -32,27 +32,39 @@
 </head>
 <body>
     <div class="metacontainer">
-        <div class="settings">
-            <div id="info">
-                <p id="title">
-                    Sketch Pad
-                </p>
-                <p id = "author">
-                    By Leo
-                </p>
-            </div>
-        <div id="color">
-            <input type="text" data-coloris>
-            <div class="colorset">
-                <div class="specific" id = "red" onclick="penColor = 'red'; "></div>
-                <div class="specific" id = "green" onclick="penColor = 'green'; "></div>
-                <div class="specific" id = "blue" onclick="penColor = 'blue'"></div>
-            </div>
-        </div> 
+        <div id = "left">
+            <div class="settings">
+                <div id="info">
+                    <p id="title">
+                        Sketch Pad
+                    </p>
+                    <p id = "author">
+                        By Leo
+                    </p>
+                </div>
+                <div id="color">
+                    <input type="text" data-coloris>
+                    <div class="colorset">
+                        <div class="specific" id = "red" onclick="penColor = 'red'; "></div>
+                        <div class="specific" id = "green" onclick="penColor = 'green'; "></div>
+                        <div class="specific" id = "blue" onclick="penColor = 'blue'"></div>
+                </div>
+            </div> 
+            
+                <div id="func">
+                    <div class="toolline">
+                        <button id="eraser" onclick="penColor = 'white'">Eraser</button>
+                        <button id="clear" > Clear</button>
+                    </div>
+                    <div class="toolline">
+                        <button id="change">32x32</button>
+                        <button id="save">SAVE</button>
+                    </div>
+                </div>
         </div>
-        <div class="container">
+    </div>
+    <div class="container">
 
-        </div>
     </div>
 </body>
 </html>
