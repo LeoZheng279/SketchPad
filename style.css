@@ -84,11 +84,16 @@ input{
     transition: all 0.1s ease;
 }
 .specific:hover{
-    border: solid black 1.5px;
+    /* 用box-shadow来模拟边框 
+    避免出现页面抖动的情况*/
+    box-shadow: 
+    0 2px 8px rgba(0,0,0,0.1),
+    0 0 0 1.5px black; /* 叠加阴影边框 */
 }
 .colorset{
     display: flex;
     justify-content:space-around;
+    flex-grow: 0;
 }
 
 #color{
