@@ -57,7 +57,7 @@ function initialize(n, h){
         container.appendChild(line);
     }
 }
-
+// 感谢deepseek提供的下载函数
 function captureElement(filename = 'pixel-art.png') {
     const element = document.querySelector(".container");
     
