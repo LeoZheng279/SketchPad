@@ -58,4 +58,20 @@ function initialize(n, h){
     }
 }
 
+function captureElement(filename = 'pixel-art.png') {
+    const element = document.querySelector(".container");
+    
+    html2canvas(element, {
+      allowTaint: true,    // 允许跨域图片
+      useCORS: true,       // 使用 CORS
+      scale: 2,            // 提高分辨率 (2倍)
+      backgroundColor: null // 透明背景
+    }).then(canvas => {
+      const link = document.createElement('a');
+      link.download = filename;
+      link.href = canvas.toDataURL('image/png', 1.0); // 质量 100%
+      link.click();
+    });
+  }
+
 initialize(16, 30);
